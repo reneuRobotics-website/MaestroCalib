@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .rotate-90 {
+          transform: rotate(90deg);
+      }
+  </style>
+  
+  <style>
+    .franka-gap {
+      margin-bottom: 5px; /* Adjust as needed */
+    }
+  </style>
+  
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    th:first-child, td:first-child {
+        border-right: 3px double;
+        font-weight: bold;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  </style>
+  <title>BiFlex: A Passive Bimodal Stiffness Flexible Wrist for Manipulation in Unstructured Environments</title>
+  <link rel="icon" type="image/x-icon" href="static/images/robin_logo_vert3.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  
+
+
+  
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">BiFlex: </h1>
+            <h2 class="title is-4 publication-title">A Passive Bimodal Stiffness Flexible Wrist for Manipulation in Unstructured Environments</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/gucheol-jeong-8b7819174/" target="_blank">Gu-Cheol Jeong</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://reneu.robotics.utexas.edu/members/stefano-dalla-gasperina-0" target="_blank">Stefano Dalla Gasperina</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://www.me.utexas.edu/people/faculty-directory/deshpande" target="_blank">Ashish D. Deshpande</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://lillych.in" target="_blank">Lillian Chin</a><sup>2*</sup>,</span>
+                    <span class="author-block">
+                    <a href="https://robertomartinmartin.com/" target="_blank">Roberto Martı́n-Martı́n</a><sup>3*</sup>
+                  </div><br>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>ReNeu Robotics Lab, Department of Mechanical Engineering<br><sup>2</sup>MERGE Lab, Department of Electrical and Computer Engineering<br><sup>3</sup>Robot Interactive Intelligence Lab, Department of Computer Science<br>The University of Texas at Austin<br><sup>*</sup> Equal advising<br>Under Review</span>
+                  </span>
+                  
+                  
+                
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/BiFlex_Arxiv.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <!-- <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2504.08706" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                    </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-play-circle"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <iframe src="https://www.youtube.com/embed/u31qwQUeGuM?si=g_pL2tMbOXqWYDdl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p><font size="4">
+            Robotic manipulation in real-life, human-focused settings is a tricky balancing act, requiring the precision for delicate free-space tasks while also safely managing unexpected contacts. Traditional robotic wrists tend to rely on overly complex controls or bulky designs that still don’t quite hit the mark. That’s why we developed BiFlex—a flexible robotic wrist built with a soft, buckling honeycomb structure that naturally toggles between two modes. In high-stiffness mode, it manipulates household objects with pinpoint accuracy, and in low-stiffness mode, it adapts to external forces. Designed to keep fingertip deflection under 1 cm while supporting up to 500 g, BiFlex integrates with various grippers such as Panda, Robotiq, and BaRiFlex. Our experiments—from surface wiping and precise pick-and-place to using environmental constraints for grasping—show that BiFlex not only simplifies control but also enhances both accuracy and safety in real-world scenarios.
+          </font></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Motivation </h3>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Motivation</h5> -->
+        <div class="columns is-centered">
+          <div class="column is-12">
+           <!-- <h4 class="title is-4">Wiping Experiment</h4> -->
+           <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Motivation5.mov" width="100%" style="border-radius:10px;"></video>
+            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Performance Evaluation</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is designed to withstand contacts and collisions, enabling smooth sliding demonstrations, facilitating precise pick-and-place operations, and adapting effectively to non-flat surfaces for wiping tasks to robustly handle diverse manipulation challenges in unstructured environments.</h5>
+        <div class="columns is-centered">
+            <div class="column is-5">
+                <h4 class="title is-4">Sliding Task</h4>
+                 <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Sliding_Demonstration/Sliding_Demonstration_new.mov" width="100%" style="margin: -4px; border: 8px; border-radius:10px;"></video>
+            </div>
+            <div class="column is-4">
+                <h4 class="title is-4">Pick and Place Task</h4>
+                    <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pick_and_place_edit/14. 500ml water.mov" width="95%" style="border-radius:10px;"></video>
+            </div>
+            <div class="column is-4">
+                <h4 class="title is-4">Wiping Task</h4>
+                    <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Experiment_2x_flip.mov" width="95%" style="border-radius:10px;"></video>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Design Concept</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is a flexible robotic wrist built around a 3D-printed buckling honeycomb structure that passively adapts its stiffness—shifting from the precision of a rigid mode to the safety of soft compliance as needed. A central universal joint ensures smooth, balanced motion, while custom top and base plates let it easily pair with a variety of robotic grippers. Plus, its stiffness threshold is adjustable by altering the honeycomb pillars and middle beam, making BiFlex highly versatile for a range of manipulation tasks.</h5>
+        <div class="columns is-centered">
+          <div class="column is-6">
+           <h4 class="title is-4">BiFlex Design</h4>
+          <img src="./static/images/Teaser2.pdf" alt="CAD_Design1" width="100%">
+          </div>
+          <div class="column is-5">
+            <h4 class="title is-4">CAD design for BiFlex</h4>
+           <img src="./static/images/fig_design.pdf" alt="CAD_Design2" width="100%">
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Adaptation in Contact-Rich Interaction: Wiping Test </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> In our wiping experiment, BiFlex (left) outperformed a traditional rigid wrist (right) when tackling triangular surfaces of varying heights. By smoothly transitioning to a more compliant mode through buckling, BiFlex kept reaction forces under the 15 N safety threshold—even on surfaces with peaks up to 50 mm—while the rigid wrist quickly exceeded safe levels on surfaces as low as 14–15 mm. This clear difference underscores BiFlex’s impressive adaptability in contact-rich scenarios.</h5>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
+        <div class="columns is-centered">
+          <div class="column is-5">
+           <h4 class="title is-4">BiFlex</h4>
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Test_FW.mp4" width="100%" style="border-radius:10px;"></video>
+            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+          </div>
+          <div class="column is-5">
+            <h4 class="title is-4">Rigid</h4>
+             <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Test_Rigid.mp4" width="100%" style="border-radius:10px;"></video>
+             <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Maintaining Accuracy: Pick-and-Place Test </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is built to handle loads up to 500 g at the fingertip, enabling precise manipulation of everyday objects. In our tests, it successfully picked and placed fourteen items below this threshold, confirming its accuracy under load. When challenged with a 600 g object, it deflected by over 10 mm—exactly at the buckling point we designed. These results show that BiFlex’s controlled bimodal stiffness delivers precision up to 500 g and that its stiffness‑transition point aligns perfectly with our design expectations.</h5>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
+        <div class="columns is-centered">
+          <div class="column is-12">
+           <!-- <h4 class="title is-4">Wiping Experiment</h4> -->
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pick_and_place_edit/Pick_And_Place_Cut2.mov" width="100%" style="border-radius:10px;"></video>
+            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Grasping with Environmental Constraints</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> In unstructured settings, even small misalignments can cause grasp failures or harmful collisions—especially when picking up thin objects from a table. BiFlex uses the table as a natural guide, letting the robot slide its fingers along the surface to correct errors and secure objects safely. This approach not only simplifies the grasping process but also boosts precision and safety in real-world tasks.</h5>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
+        <div class="columns is-centered">
+          <div class="column is-12">
+           <!-- <h4 class="title is-4">Wiping Experiment</h4> -->
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Sliding_Demonstration/Sliding_Demonstration_plot.mov" width="100%" style="border-radius:10px;"></video>
+            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- <section class="section"> 
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">Performance Characterization</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> We conducted the compression tests to verify that BiFlex achieves its intended bimodal stiffness behavior—ensuring that it maintains high stiffness for precise free-space operations and transitions to a compliant mode to safely absorb impact forces during contact. By using a pressing machine to measure torque versus angular deflection, we confirmed that the controlled buckling point occurs as designed, and testing three different BiFlex variants ensured that this behavior is consistent and robust across various configurations.</h5>
+                <div class="columns is-centered">
+          <div class="column is-3">
+           <h4 class="title is-4">Test Setup</h4>
+            <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%">
+          </div>
+          <div class="column is-6">
+           <h4 class="title is-4">Characterization Result</h4>
+          <img src="./static/images/Compression_Result.pdf" alt="Compression_Result" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-3">BiFlex for Any Robotic Hand</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is designed to be versatile and adapt to various robotic grippers with its modular design and adjustable parameters. We’ve tailored the design for multiple grippers—including Franka Hand, Robotiq, and BaRiFlex—demonstrating its broad applicability and ease of integration in different setups.</h5>
+        <div class="columns is-centered">
+          <div class="column is-4">
+           <h4 class="title is-4">Franka Hand</h4> 
+           <!-- <div class="franka-gap"></div> -->
+           <img src="./static/images/Franka.pdf" alt="Franka_Compressiob" width="100%"> <br>
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/FrankaHand_mix.mov" width="100%" style="border-radius:10px;"></video>
+          </div>
+          <div class="column is-4">
+           <h4 class="title is-4">Robotiq</h4>
+           <img src="./static/images/Robotiq.pdf" alt="Robotiq_Compression" width="100%"> <br>
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/Robotiq_mix.mov" width="93%" style="border-radius:10px;"></video>
+          </div>
+          <div class="column is-4">
+           <h4 class="title is-4">BaRiFlex</h4>
+           <img src="./static/images/BaRiFlex.pdf" alt="BaRiFlex_Compression" width="100%">
+           <div class="franka-gap"></div>
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/BaRiFlex_mix.mov" width="96%" style="margin: -4px; border: 8px; border-radius:10px;"></video>
+            <!-- <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/requirements/RL_test.mp4" width="100%" style="margin: -4px; border: 8px; border-radius:10px; border-style: solid; border-color: red;"></video> !-->
+          </div>
+          <!-- <div class="column is-3">
+           <h4 class="title is-4">Result</h4>
+            <img src="./static/images/Pressing_Test2.pdf" alt="Pressing_Result" width="100%">
+          </div> -->
+        </div>
+        <br>
+        <h3 class="title is-3">Theoretical Analysis</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;">   <p style="text-align: center; padding-bottom: 10px;">
+          We treated each honeycomb cell as a set of beams and used Hooke’s law to get a simple formula for its vertical stiffness (<em>K<sub>eq</sub></em>).  
+          Applying Euler’s buckling formula to the diagonal beams gives the critical load (<em>F<sub>i</sub></em>) at which the cell suddenly softens.  
+          This analysis shows that the tilt angle (<em>&gamma;</em>) and beam thickness (<em>b</em>) are the key levers for tuning BiFlex’s stiffness and buckling behavior.
+        </p> </h5>
+        <div class="column is-12">
+          <img src="./static/images/Theoretical_Analysis.png" alt="Theoretical_Analysis" width="100%">
+         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{jeong2025biflexpassivebimodalstiffness,
+        title={BiFlex: A Passive Bimodal Stiffness Flexible Wrist for Manipulation in Unstructured Environments}, 
+        author={Gu-Cheol Jeong and Stefano Dalla Gasperina and Ashish D. Deshpande and Lillian Chin and Roberto Martín-Martín},
+        year={2025},
+        eprint={2504.08706},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2504.08706}, 
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+<!--
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
