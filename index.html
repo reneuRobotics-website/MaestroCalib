@@ -121,7 +121,7 @@
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="static/pdfs/BiFlex_Arxiv.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -129,7 +129,7 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span>
+                    </span> -->
 
                   <!-- Github link -->
                   <!-- <span class="link-block">
@@ -154,7 +154,7 @@
                 </span>
 
                 <!-- Supplementary PDF link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -162,7 +162,18 @@
                     </span>
                     <span>Video</span>
                   </a>
-                </span>
+                </span> -->
+
+                <!-- Supplementary Tutorial link -->
+                <span class="link-block">
+                  <a href="CAD.html" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="	fas fa-archive"></i>
+                  </span>
+                  <span>CAD Files</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -281,7 +292,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h3 class="title is-3">Adaptation in Contact-Rich Interaction: Wiping Test </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> In our wiping experiment, BiFlex (left) outperformed a traditional rigid wrist (right) when tackling triangular surfaces of varying heights. By smoothly transitioning to a more compliant mode through buckling, BiFlex kept reaction forces under the 15 N safety threshold—even on surfaces with peaks up to 50 mm—while the rigid wrist quickly exceeded safe levels on surfaces as low as 14–15 mm. This clear difference underscores BiFlex’s impressive adaptability in contact-rich scenarios.</h5>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex passively switches into compliant mode whenever reaction forces at the fingertip exceed a certain threshold (11 N for the Robotiq gripper), absorbing impacts instead of transferring overload to the arm. We demonstrated this by mounting a 5 mm sponge and wiping 30°-tilted triangular surfaces of increasing height. Thanks to BiFlex, reaction forces stayed under the 15 N safety threshold even on 50 mm peaks—while a rigid wrist already exceeded 15 N on just a 15 mm peak—highlighting BiFlex’s unmatched adaptability in contact-rich tasks. This clear difference underscores BiFlex’s impressive adaptability in such scenarios.</h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
         <div class="columns is-centered">
           <div class="column is-5">
@@ -305,7 +316,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h3 class="title is-3">Maintaining Accuracy: Pick-and-Place Test </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is built to handle loads up to 500 g at the fingertip, enabling precise manipulation of everyday objects. In our tests, it successfully picked and placed fourteen items below this threshold, confirming its accuracy under load. When challenged with a 600 g object, it deflected by over 10 mm—exactly at the buckling point we designed. These results show that BiFlex’s controlled bimodal stiffness delivers precision up to 500 g and that its stiffness‑transition point aligns perfectly with our design expectations.</h5>
+        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is a dual-stiffness wrist offering a rigid mode for high-precision manipulation of objects up to 500 g. To validate its accuracy, we set the internal height of the third shelf in a three-tier cabinet to be 1 cm greater than each object’s height and attempted to place the picked object into that confined space. As intended, BiFlex picked and placed every object under 500 g at its target and then switched to compliant mode when faced with a 600 g load—demonstrating robust impact resistance.</h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
         <div class="columns is-centered">
           <div class="column is-12">
@@ -324,7 +335,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h3 class="title is-3">Grasping with Environmental Constraints</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> In unstructured settings, even small misalignments can cause grasp failures or harmful collisions—especially when picking up thin objects from a table. BiFlex uses the table as a natural guide, letting the robot slide its fingers along the surface to correct errors and secure objects safely. This approach not only simplifies the grasping process but also boosts precision and safety in real-world tasks.</h5>
+        <h5 style="text-align: center; padding-bottom: 10px;"> In unstructured settings, tiny positioning errors can cause failed grasps or collisions—especially when trying to pick thin objects from a table. 
+          Instead of needing perfect positioning, BiFlex's compliant mode safely slides along the table’s surface, turning potential collisions into beneficial guides for accurate grasping. We tested this by having the robot approach a small hex wrench, deliberately setting the target height up to 50 mm below the object’s actual position. BiFlex smoothly adapted to this constraint, keeping reaction forces safely below the 15 N threshold. This demonstrates that BiFlex can naturally handle inaccuracies, turning potential errors into successful, safe grasps.</h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
         <div class="columns is-centered">
           <div class="column is-12">
@@ -397,9 +409,7 @@
         <br>
         <h3 class="title is-3">Theoretical Analysis</h3>
         <h5 style="text-align: center; padding-bottom: 10px;">   <p style="text-align: center; padding-bottom: 10px;">
-          We treated each honeycomb cell as a set of beams and used Hooke’s law to get a simple formula for its vertical stiffness (<em>K<sub>eq</sub></em>).  
-          Applying Euler’s buckling formula to the diagonal beams gives the critical load (<em>F<sub>i</sub></em>) at which the cell suddenly softens.  
-          This analysis shows that the tilt angle (<em>&gamma;</em>) and beam thickness (<em>b</em>) are the key levers for tuning BiFlex’s stiffness and buckling behavior.
+          We modeled each honeycomb cell as a network of beams and applied Hooke’s law to derive a simple formula for its vertical stiffness (<em>K<sub>eq</sub></em>). By applying Euler’s buckling formula to the diagonal beams, we identified the critical load—the point at which the cell suddenly becomes softer when the input force (<em>F<sub>i</sub></em>) surpasses this threshold. This analysis revealed that the tilt angle (<em>&gamma;</em>) largely influences BiFlex’s vertical stiffness, while the beam thickness (<em>b</em>) mainly adjusts the critical buckling load. By tuning these two parameters, BiFlex can be customized to match the specific needs of various robotic end-effectors.
         </p> </h5>
         <div class="column is-12">
           <img src="./static/images/Theoretical_Analysis.png" alt="Theoretical_Analysis" width="100%">
