@@ -185,7 +185,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h3 class="title is-3">Motivation</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> This study introduced a human-data-driven hand tracking calibration method for hand exoskeleton. The working principle could be summarized as the following: (0) Two-phase calibration, where the human subject firstly fully extend the fingers, and secondly bending the MCPs while keeps the IP/PIP straight. (1) Optimization on virtual links connection joints of hand exoskeleton joints and human finger joints. (2) Comparing the RMSEs on estimated and measured angles on redundant exoskeleton joints and configured human finger joints. (3) Establish Weighted cost function by weight distribution search over 7 human subjects.
+        <h5 style="text-align: center; padding-bottom: 10px;"> 
+        This study presents a human-data-driven calibration framework for enhancing hand tracking accuracy in exoskeleton systems. The approach comprises the following key components: (0) a two-phase calibration protocol in which subjects first fully extend their fingers, followed by flexion at the metacarpophalangeal (MCP) joints while maintaining interphalangeal (IP/PIP) joints in an extended posture; (1) optimization of the virtual linkage between exoskeleton joint centers and corresponding anatomical finger joints; (2) evaluation of root mean square errors (RMSEs) between estimated and measured joint angles for both redundant exoskeleton joints and anatomically configured human joints; and (3) construction of a weighted cost function through a systematic weight distribution search based on data collected from seven human participants.
         </h5>
 
         <div class="columns is-centered" style="padding-top: 20px;">
@@ -203,8 +204,10 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Calibration Procedure in Kinematic Animation Real-time </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> The calibration algorithm is deployed online before the hand tracking experiment. The three sub videos give examples on how the two-phase calibration process work and being updated to the real-time kinematic models.</h5>
+        <h3 class="title is-3">Real-Time Visualization of the Kinematic Calibration Procedure </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> 
+        The calibration algorithm is executed online prior to the hand tracking experiments. The three accompanying video segments illustrate the two-phase calibration procedure and demonstrate how the resulting parameters are integrated into the real-time kinematic models.        
+        </h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
 
         <div class="columns is-centered">
@@ -237,8 +240,9 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Calibration Results in Kinematic Animation </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;">The kinematics model before and after calibration is visually different. The video firstly toggles back and forth between pre-calibrated kinematics and post-calibrated kinematics under several hand postures. Secondly, the videos shows the continous hand motions pre-calibration and post-calibration respectively. 
+        <h3 class="title is-3">Comparative Visualization of Pre- and Post-Calibration Kinematics </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;">
+        The kinematic models before and after calibration exhibit clear visual differences. The first segment of the video toggles between the pre-calibrated and post-calibrated models across various hand postures to highlight alignment discrepancies. The subsequent segments present continuous hand motion sequences, captured separately under the pre- and post-calibration conditions, to demonstrate improvements in motion fidelity.        
         </h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> </h5> -->
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
@@ -258,9 +262,9 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Real-time Unity-based Teleoperation</h3>
+        <h3 class="title is-3">Real-Time Teleoperation in a Unity-Based Simulation Environment</h3>
         <h5 style="text-align: center; padding-bottom: 10px;"> 
-          The teleoperation from the hand tracking data to virtual stand hand in simulation environment Unity. Red hand refers to the hand motion before calibration, and the green hand refers to that after calibration.
+        The teleoperation is implemented by mapping the hand tracking data to a virtual humanoid hand within a Unity-based simulation environment. In the visualization, the red hand represents motion captured prior to calibration, while the green hand reflects motion following the application of the calibration procedure.        
         </h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
         <div class="columns is-centered">
