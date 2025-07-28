@@ -63,7 +63,7 @@
     }
   </style>
   <title>Human-Exoskeleton Kinematic Calibration to Improve Hand Tracking for Dexterous Teleoperation</title>
-  <link rel="icon" type="image/x-icon" href="static/images/reneu_logo.jpg">
+  <link rel="icon" type="image/x-icon" href="static/images/reneulab_logo.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -93,7 +93,6 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="has-text-centered">
-        <h1 class="title is-1 publication-title">MaestroCalib</h1>
         <h2 class="title is-4 publication-title">Human Data-Driven Calibration of Hand Exoskeletons Using Redundant Sensors for Improved Teleoperation</h2>
 
         <div class="is-size-5 publication-authors">
@@ -137,13 +136,6 @@
             </a>
           </span>
 
-          <span class="link-block"> 
-            <a href="CAD.html" target="_blank"
-              class="external-link button is-normal is-rounded is-dark">
-              <span class="icon"><i class="fas fa-archive"></i></span>
-              <span>BiFlex CAD Files</span>
-            </a>
-          </span>
         </div>
       </div>
     </div>
@@ -162,7 +154,7 @@
           
           <div class="publication-video">
             
-            <iframe src="https://www.youtube.com/embed/v6jcDTfMI6k?si=8DKgjdGIQscXhV9j" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OkV68LMp1Jo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -180,8 +172,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p><font size="4">
-            Hand exoskeletons are critical tools for dexterous teleoperation and immersive manipulation interfaces, but achieving accurate hand tracking remains a challenge due to user-specific anatomical variability and donning inconsistencies. These issues lead to kinematic misalignments that degrade tracking performance and limit applicability in precision tasks. This paper presents a subject-specific calibration framework for exoskeleton-based hand tracking that leverages redundant joint sensing and a residual-weighted optimization strategy to estimate virtual link parameters. Implemented on the \textsc{Maestro} exoskeleton, our method improves joint angle and fingertip position estimation across users with diverse hand geometries. We introduce a data-driven approach to empirically tune cost function weights using motion capture ground truth, enabling more accurate and consistent calibration across participants. Quantitative results from seven subjects show substantial reductions in joint and fingertip tracking errors compared to uncalibrated and evenly weighted models. Qualitative visualizations using a Unity-based virtual hand further confirm improvements in motion fidelity. The proposed framework generalizes across exoskeleton designs with closed-loop kinematics and minimal sensing, and lays the foundation for high-fidelity teleoperation and learning-from-demonstration applications.          </font></p>
-        </div>
+          Hand exoskeletons are critical tools for dexterous teleoperation and immersive manipulation interfaces, but achieving accurate hand tracking remains a challenge due to user-specific anatomical variability and donning inconsistencies. These issues lead to kinematic misalignments that degrade tracking performance and limit applicability in precision tasks. This paper presents a subject-specific calibration framework for exoskeleton-based hand tracking that leverages redundant joint sensing and a residual-weighted optimization strategy to estimate virtual link parameters. Implemented on the Maestro exoskeleton, our method improves joint angle and fingertip position estimation across users with diverse hand geometries. We introduce a data-driven approach to empirically tune cost function weights using motion capture ground truth, enabling more accurate and consistent calibration across participants. Quantitative results from seven subjects show substantial reductions in joint and fingertip tracking errors compared to uncalibrated and evenly weighted models. Qualitative visualizations using a Unity-based virtual hand further confirm improvements in motion fidelity. The proposed framework generalizes across exoskeleton designs with closed-loop kinematics and minimal sensing, and lays the foundation for high-fidelity teleoperation and learning-from-demonstration applications.        </div>
       </div>
     </div>
   </div>
@@ -189,91 +180,54 @@
 <!-- End paper abstract -->
 
 
-<section class="section"> 
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Motivation </h3>
-        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Motivation</h5> -->
-        <div class="columns is-centered">
-          <div class="column is-12">
-           <!-- <h4 class="title is-4">Wiping Experiment</h4> -->
-           <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Motivation5.mov" width="100%" style="border-radius:10px;"></video>
-            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Performance Evaluation</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is designed to withstand contacts and collisions, enabling smooth sliding demonstrations, facilitating precise pick-and-place operations, and adapting effectively to non-flat surfaces for wiping tasks to robustly handle diverse manipulation challenges in unstructured environments.</h5>
-        <div class="columns is-centered">
-            <div class="column is-5">
-                <h4 class="title is-4">Sliding Task</h4>
-                 <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Sliding_Demonstration/Sliding_Demonstration_new.mov" width="100%" style="margin: -4px; border: 8px; border-radius:10px;"></video>
-            </div>
-            <div class="column is-4">
-                <h4 class="title is-4">Pick and Place Task</h4>
-                    <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pick_and_place_edit/14. 500ml water.mov" width="95%" style="border-radius:10px;"></video>
-            </div>
-            <div class="column is-4">
-                <h4 class="title is-4">Wiping Task</h4>
-                    <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Experiment_2x_flip.mov" width="95%" style="border-radius:10px;"></video>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
 <section class="section">
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Design Concept</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is a flexible robotic wrist built around a 3D-printed buckling honeycomb structure that passively adapts its stiffness—shifting from the precision of a rigid mode to the safety of soft compliance as needed. A central universal joint ensures smooth, balanced motion, while custom top and base plates let it easily pair with a variety of robotic grippers. Plus, its stiffness threshold is adjustable by altering the honeycomb pillars and middle beam, making BiFlex highly versatile for a range of manipulation tasks.</h5>
-        <div class="columns is-centered">
-          <div class="column is-6">
-           <h4 class="title is-4">BiFlex Design</h4>
-          <img src="./static/images/Teaser2.pdf" alt="CAD_Design1" width="100%">
+        <h3 class="title is-3">Motivation</h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> This study introduced a human-data-driven hand tracking calibration method for hand exoskeleton. The working principle could be summarized as the following: (0) Two-phase calibration, where the human subject firstly fully extend the fingers, and secondly bending the MCPs while keeps the IP/PIP straight. (1) Optimization on virtual links connection joints of hand exoskeleton joints and human finger joints. (2) Comparing the RMSEs on estimated and measured angles on redundant exoskeleton joints and configured human finger joints. (3) Establish Weighted cost function by weight distribution search over 7 human subjects.
+        </h5>
+
+        <div class="columns is-centered" style="padding-top: 20px;">
+          <div class="column is-8">
+            <img src="./static/images/experiment_protocol_workflow.jpg" alt="Calibration Diagram" width="100%">
           </div>
-          <div class="column is-5">
-            <h4 class="title is-4">CAD design for BiFlex</h4>
-           <img src="./static/images/fig_design.pdf" alt="CAD_Design2" width="100%">
-           </div>
         </div>
+
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="section"> 
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Adaptation in Contact-Rich Interaction: Wiping Test </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex passively switches into compliant mode whenever reaction forces at the fingertip exceed a certain threshold (11 N for the Robotiq gripper), absorbing impacts instead of transferring overload to the arm. We demonstrated this by mounting a 5 mm sponge and wiping 30°-tilted triangular surfaces of increasing height. Thanks to BiFlex, reaction forces stayed under the 15 N safety threshold even on 50 mm peaks—while a rigid wrist already exceeded 15 N on just a 15 mm peak—highlighting BiFlex’s unmatched adaptability in contact-rich tasks. This clear difference underscores BiFlex’s impressive adaptability in such scenarios.</h5>
+        <h3 class="title is-3">Calibration Procedure in Kinematic Animation Real-time </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;"> The calibration algorithm is deployed online before the hand tracking experiment. The three sub videos give examples on how the two-phase calibration process work and being updated to the real-time kinematic models.</h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
+
         <div class="columns is-centered">
-          <div class="column is-5">
-           <h4 class="title is-4">BiFlex</h4>
-            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Test_FW_new2.mp4" width="100%" style="border-radius:10px;"></video>
-            <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
+          <div class="column is-one-third">
+            <h4 class="title is-4">Thumb Calibration Process</h4>
+            <div class="video-container">
+              <iframe width="100%" height="215" src="./static/videos/Thumb Calibration.mov" frameborder="0" allowfullscreen></iframe>
+            </div>
           </div>
-          <div class="column is-5">
-            <h4 class="title is-4">Rigid</h4>
-             <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Wiping_surface_Experiment/Wiping_Test_Rigid_new2.mp4" width="100%" style="border-radius:10px;"></video>
-             <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
-           </div>
+          <div class="column is-one-third">
+            <h4 class="title is-4">Index Calibration Process</h4>
+            <div class="video-container">
+              <iframe width="100%" height="215" src="./static/videos/Index Calibration.mov" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <h4 class="title is-4">Middle Calibration Process</h4>
+            <div class="video-container">
+              <iframe width="100%" height="215" src="./static/videos/Middle Calibration.mov" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -283,13 +237,15 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Maintaining Accuracy: Pick-and-Place Test </h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is a dual-stiffness wrist offering a rigid mode for high-precision manipulation of objects up to 500 g. To validate its accuracy, we set the internal height of the third shelf in a three-tier cabinet to be 1 cm greater than each object’s height and attempted to place the picked object into that confined space. As intended, BiFlex picked and placed every object under 500 g at its target and then switched to compliant mode when faced with a 600 g load—demonstrating robust impact resistance.</h5>
+        <h3 class="title is-3">Calibration Results in Kinematic Animation </h3>
+        <h5 style="text-align: center; padding-bottom: 10px;">The kinematics model before and after calibration is visually different. The video firstly toggles back and forth between pre-calibrated kinematics and post-calibrated kinematics under several hand postures. Secondly, the videos shows the continous hand motions pre-calibration and post-calibration respectively. 
+        </h5>
+        <!-- <h5 style="text-align: center; padding-bottom: 10px;"> </h5> -->
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
         <div class="columns is-centered">
           <div class="column is-12">
            <!-- <h4 class="title is-4">Wiping Experiment</h4> -->
-            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pick_and_place_edit/Pick_And_Place_Cut2.mov" width="100%" style="border-radius:10px;"></video>
+            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Before and after Calibration.mov" width="100%" style="border-radius:10px;"></video>
             <!-- <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%"> -->
           </div>
         </div>
@@ -302,7 +258,7 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h3 class="title is-3">Grasping with Environmental Constraints</h3>
+        <h3 class="title is-3">Real-time Unity-based Teleoperation</h3>
         <h5 style="text-align: center; padding-bottom: 10px;"> In unstructured settings, tiny positioning errors can cause failed grasps or collisions—especially when trying to pick thin objects from a table. 
           Instead of needing perfect positioning, BiFlex's compliant mode safely slides along the table’s surface, turning potential collisions into beneficial guides for accurate grasping. We tested this by having the robot approach a small hex wrench, deliberately setting the target height up to 50 mm below the object’s actual position. BiFlex smoothly adapted to this constraint, keeping reaction forces safely below the 15 N threshold. This demonstrates that BiFlex can naturally handle inaccuracies, turning potential errors into successful, safe grasps.</h5>
         <!-- <h5 style="text-align: center; padding-bottom: 10px;"> Test1. <br> Test2.</h5> !-->
@@ -317,76 +273,6 @@
     </div>
   </div>
 </section>
-
-
-
-
-<!-- <section class="section"> 
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">Performance Characterization</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> We conducted the compression tests to verify that BiFlex achieves its intended bimodal stiffness behavior—ensuring that it maintains high stiffness for precise free-space operations and transitions to a compliant mode to safely absorb impact forces during contact. By using a pressing machine to measure torque versus angular deflection, we confirmed that the controlled buckling point occurs as designed, and testing three different BiFlex variants ensured that this behavior is consistent and robust across various configurations.</h5>
-                <div class="columns is-centered">
-          <div class="column is-3">
-           <h4 class="title is-4">Test Setup</h4>
-            <img src="./static/images/Compression_Test.pdf" alt="Compression_Test" width="100%">
-          </div>
-          <div class="column is-6">
-           <h4 class="title is-4">Characterization Result</h4>
-          <img src="./static/images/Compression_Result.pdf" alt="Compression_Result" width="100%">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h3 class="title is-3">BiFlex for Any Robotic Hand</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;"> BiFlex is designed to be versatile and adapt to various robotic grippers with its modular design and adjustable parameters. We’ve tailored the design for multiple grippers—including Franka Hand, Robotiq, and BaRiFlex—demonstrating its broad applicability and ease of integration in different setups.</h5>
-        <div class="columns is-centered">
-          <div class="column is-4">
-           <h4 class="title is-4">Franka Hand</h4> 
-           <!-- <div class="franka-gap"></div> -->
-           <img src="./static/images/Franka.pdf" alt="Franka_Compressiob" width="100%"> <br>
-            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/FrankaHand_mix.mov" width="100%" style="border-radius:10px;"></video>
-          </div>
-          <div class="column is-4">
-           <h4 class="title is-4">Robotiq</h4>
-           <img src="./static/images/Robotiq.pdf" alt="Robotiq_Compression" width="100%"> <br>
-            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/Robotiq_mix.mov" width="93%" style="border-radius:10px;"></video>
-          </div>
-          <div class="column is-4">
-           <h4 class="title is-4">BaRiFlex</h4>
-           <img src="./static/images/BaRiFlex.pdf" alt="BaRiFlex_Compression" width="100%">
-           <div class="franka-gap"></div>
-            <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/Pressing_Experiment/6x/BaRiFlex_mix.mov" width="96%" style="margin: -4px; border: 8px; border-radius:10px;"></video>
-            <!-- <video class="center" playsinline="" autoplay="" loop="" muted="" src="./static/videos/requirements/RL_test.mp4" width="100%" style="margin: -4px; border: 8px; border-radius:10px; border-style: solid; border-color: red;"></video> !-->
-          </div>
-          <!-- <div class="column is-3">
-           <h4 class="title is-4">Result</h4>
-            <img src="./static/images/Pressing_Test2.pdf" alt="Pressing_Result" width="100%">
-          </div> -->
-        </div>
-        <br>
-        <h3 class="title is-3">Theoretical Analysis</h3>
-        <h5 style="text-align: center; padding-bottom: 10px;">   <p style="text-align: center; padding-bottom: 10px;">
-          We modeled each honeycomb cell as a network of beams and applied Hooke’s law to derive a simple formula for its vertical stiffness (<em>K<sub>eq</sub></em>). By applying Euler’s buckling formula to the diagonal beams, we identified the critical load—the point at which the cell suddenly becomes softer when the input force (<em>F<sub>i</sub></em>) surpasses this threshold. This analysis revealed that the tilt angle (<em>&gamma;</em>) largely influences BiFlex’s vertical stiffness, while the beam thickness (<em>b</em>) mainly adjusts the critical buckling load. By tuning these two parameters, BiFlex can be customized to match the specific needs of various robotic end-effectors.
-        </p> </h5>
-        <div class="column is-12">
-          <img src="./static/images/Theoretical_Analysis.png" alt="Theoretical_Analysis" width="100%">
-         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
